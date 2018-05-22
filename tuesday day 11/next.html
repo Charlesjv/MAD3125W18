@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>student info</h1>
+    <p>Student information</p>
+    <div id="info"></div>
+<a href="day11locstorage.html">Go BACK</a>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+var name= localStorage.getItem("name");
+var studentid= localStorage.getItem("studentid");
+var program= localStorage.getItem("program");
+
+console.log("name = " + name);
+console.log("studentid = " + studentid);
+console.log("program = " + program);
+
+
+$("#info").append(
+  "<p> Student name: "+ name + "</p>"
+  +"<p> Student id: " + studentid +"</p>"
+  +"<p> program: " + program +"</p>"
+);
+</script>
+  </body>
+</html>

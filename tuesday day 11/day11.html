@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JQUERY</title>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+  </head>
+  <body>
+<h1>Fade effects</h1>
+
+<img src ="images/eggplant.png" id="eggplant">
+<img src ="images/banana.png" class ="banana">
+<img src ="images/watermelon.png" class ="banana">
+<img src ="images/carrot.png" class ="banana">
+<h2>Sliding</h2>
+<ul id="fruit-list" style= "display:none;">
+  <li>Watermelon</li>
+  <li>Banana</li>
+  <li>Apple</li>
+    <li>Mango</li>
+</ul>
+<h2>Click click example</h2>
+<button id="btnABC">Mark as done</button>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type ="text/javascript">
+//$("#eggplant").fadeOut(3000);
+$("#eggplant").fadeIn(3000);
+$("#eggplant").fadeOut(3000);
+$("#eggplant").fadeIn(3000);
+$(".banana").slideDown(3000);
+$(".banana").fadeIn(3000);
+$(".banana").fadeOut(3000);
+$(".banana").fadeIn(3000);
+$("#fruit-list").slideDown(4000);
+$("#fruit-list").slideUp(4000);
+$("#fruit-list").slideDown(4000);
+//fnction to hide
+$("#btnABC").click(function(){
+//$("#fruit-list").hide();
+ //$("#fruit-list").append("<li><a href='https://www.facebook.com'>Mango</a></li>");
+$("#fruit-list li ").append("<i class='fas fa-check'></i> Done!");
+
+
+})
+
+
+
+document.getElementById("#btnABC").addEventListener("click",function(){
+  ("#")
+})
+</script>
+  </body>
+</html>

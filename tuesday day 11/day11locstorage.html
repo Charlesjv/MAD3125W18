@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>  Local Storage Example</h1>
+<label for="name"> Whats your name?</label>
+<input id="name" type="text">
+<br>
+<label for="name"> Whats your id?</label>
+<input id="studentid" type="text">
+<br>
+<label for="name"> Whats your program?</label>
+<input class ="program" type="text">
+<br>
+<button id="go">Save! </button>
+
+<button id="show">Show database item </button>
+<a href="next.html">How students</a>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+$("#go").click(function(){
+  var x = $("input#name").val();  //.val is used to get the value from the txt box
+  var y = $("input#studentid").val();
+    var z = $("input.program").val();
+localStorage.setItem("name", x);
+localStorage.setItem("studentid", y);
+localStorage.setItem("program", z);
+alert("I saved something");
+$("input#name").val("");  //.val is used to get the value from the txt box
+ $("input#studentid").val("");
+ $("input.program").val("");
+});
+$("#show").click(function(){
+  var m = localStorage.getItem("name");
+  alert(m);
+});
+
+
+
+  </script>
+  </body>
+</html>
